@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/aliceBlue"
+    tools:context=".ui.activity.HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/aliceBlue"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/custom_main_toolbar" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/services_rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:paddingBottom="20dp" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/loading_view"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:visibility="visible"
+                app:lottie_autoPlay="true"
+                app:lottie_colorFilter="@color/crayola"
+                app:lottie_fileName="json/loader.json"
+                app:lottie_loop="true"
+                app:lottie_progress="0.5"
+                app:lottie_renderMode="automatic"
+                app:lottie_repeatCount="-1"
+                app:lottie_repeatMode="restart"
+                app:lottie_speed="1.0" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/add_service_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        android:layout_marginBottom="16dp"
+        android:minWidth="120dp"
+        android:minHeight="48dp"
+        app:cardBackgroundColor="@color/crayola"
+        app:strokeWidth="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:minWidth="120dp"
+            android:minHeight="48dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cairo_bold"
+                android:text="@string/str_request_service"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                tools:ignore="SpUsage" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

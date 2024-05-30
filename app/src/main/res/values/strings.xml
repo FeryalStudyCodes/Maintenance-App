@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Phone Care</string>
+    <string name="str_request_service">اطلب خدمة</string>
+    <string name="str_duration_title">عدد الأيام المطلوب للخدمة:</string>
+    <string name="str_full_name">الاسم الكامل</string>
+    <string name="str_cancel">إلغاء</string>
+    <string name="str_your_name">اسمك</string>
+    <string name="str_mobile">رقم الهاتف</string>
+    <string name="str_save">حفظ</string>
+    <string name="str_name_hint">ادخل اسمك...</string>
+    <string name="str_problem_desc">وصف المشكلة</string>
+    <string name="str_desc_hint">اكتب وصف المشكلة ...</string>
+</resources>
