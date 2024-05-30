@@ -7,4 +7,4 @@ See the details of the service.
 Request a maintenance service.
 
 Used language and tools
-I used the JAVA language in android studio, for database I use Room db, the used pattern is Repository Pattern, for Api I used Retrofit.
+I used the JAVA language in Android Studio, for database I use Room db, the used pattern is Repository Pattern, for Api I used Retrofit.
